@@ -32,6 +32,12 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "允许 $(PRODUCT_NAME) 访问麦克风，用于录制语音作业。"
+        }
       ]
     ],
     "experiments": {

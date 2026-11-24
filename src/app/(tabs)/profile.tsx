@@ -2,6 +2,7 @@ import { Link } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import AudioRecorder from '@/components/audio-recorder';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
@@ -74,6 +75,12 @@ export default function ProfileScreen() {
                 </Pressable>
               );
             })}
+          </ThemedView>
+
+          {/* 录音功能演示 */}
+          <ThemedView style={{ gap: Spacing.two, marginTop: Spacing.two }}>
+            <ThemedText type="smallBold">功能演示</ThemedText>
+            <AudioRecorder />
           </ThemedView>
 
           <Link href="/courses" asChild>
